@@ -1,0 +1,212 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  overflow-x: hidden;
+}
+
+/* Container */
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+/* revisar de aqui en adelante */
+.container {
+  width: 84%;
+  margin-inline: auto;
+}
+
+
+
+
+.btn.primary {
+  background:#6f6af8;
+  color: #fff;
+}
+
+.btn.category {
+  background: hwb(240 95% 0%);
+  color: #6f6af8;
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+.btn.sm {
+  font-size: 0.8rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 0.4rem;
+}
+
+.btn.danger {
+  background: rgb(255, 63, 63);
+  color: #fff;
+}
+
+
+/* Grid System */
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+}
+
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.grid--center-v {
+  align-items: center;
+}
+
+/* Heading Clases */
+
+
+.heading-secondary,
+.heading-tertiary {
+  font-weight: 700;
+  color: #333;
+  letter-spacing: -0.5px;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}
+
+.section-heading {
+  align-items: center;
+  text-align: center;
+  color: #228be6;
+  margin-bottom: 8rem;
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem hsla(208, 80%, 52%, 0.5);
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 0.6rem 1rem;
+  border-radius: 0.3rem;
+  resize: none;
+}
+.featured__wrapper {
+  display: flex;
+  gap: 0.5rem;
+}
+
+label, input[type="checkbox"] {
+  width: fit-content;
+}
+
+label {
+  font-size: 0.9rem;
+}
+
+.form__error-message {
+  background: var(--color-red);
+  color: var(--color-white);
+  font-size: 0.8rem;
+  padding: 0.6rem 1rem;
+  border-radius: var(--radius-1);
+  display: block;
+  margin-bottom: 1rem;
+}
+
+/* fix for ql editor overflow */
+.ql-editor {
+  overflow: scroll;
+  height: 8rem;
+  max-height: 15rem;
+}
+
+.center {
+  text-align: center;
+  padding-top: 5rem;
+  margin-inline: center;
+  display: block;
+  width: 100%;
+}
+
+/* little style on error page */
+.error-page h2 {
+  margin-top: 3rem;
+}

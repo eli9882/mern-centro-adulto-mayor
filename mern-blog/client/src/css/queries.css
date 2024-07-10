@@ -1,0 +1,458 @@
+/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
+
+/**************************/
+/* BELOW 1350px 
+/**************************/
+@media (max-width: 85em) {
+  .section-hero {
+    padding: 20rem 0 0rem 0;
+  }
+
+  .hero {
+    padding: 0 auto;
+  }
+}
+
+/**************************/
+/* BELOW 1250px 
+/**************************/
+
+@media (max-width: 78em) {
+  html {
+    /* font-size: 10px; */
+    /* 9px / 16px = 0.625 = 56.25 */
+    /* Percentage of user's browser font-size setting */
+    font-size: 56.25%;
+  }
+}
+
+/**************************/
+/* BELOW 1000px  */
+/**************************/
+@media (max-width: 63em) {
+  .main-nav-list {
+    gap: 3.2rem;
+  }
+
+  .logo-img-footer {
+    height: 15rem;
+  }
+
+  .footer .grid {
+    column-gap: 3.2rem;
+  }
+}
+
+/**************************/
+/* BELOW 900px  */
+/**************************/
+@media (max-width: 56em) {
+  html {
+    /* font-size: 10px; */
+    /* 8.50px / 16px = 0.5625 = 56.25 */
+    /* Percentage of user's browser font-size setting */
+    font-size: 53.12%;
+  }
+
+  .main-nav-list {
+    gap: 2.4rem;
+  }
+
+  .section-TCU_Judicial {
+    height: 75rem;
+  }
+
+  .section-TCU {
+    height: 75rem;
+  }
+
+  .cta {
+    /* 3/5 = 60% + 2/5 = 40% */
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+
+  .btn--form {
+    margin-top: 1.2rem;
+  }
+  /* MOBILE NAVIGATION */
+  .btn-mobile-nav {
+    display: block;
+    z-index: 999999;
+  }
+
+  .main-nav {
+    background-color: rgba(211, 232, 250, 0.9);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /* Hide navigation */
+    /* Allows NO transitions at all */
+    /* display: none; */
+    /* 1) Hide it visually */
+    opacity: 0;
+
+    /* 2) Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
+    z-index: 999999;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+
+  .section-TCU {
+    height: 59rem;
+  }
+
+  .section-TCU_Judicial {
+    height: 65rem;
+  }
+
+  .footer .grid {
+    column-gap: 4.8rem;
+    row-gap: 1.6rem;
+  }
+
+  .footer .grid--4-cols {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .logo-footer {
+    grid-row: 1 / -4;
+    justify-self: center;
+  }
+
+  .footer-phones {
+    margin-top: 4rem;
+  }
+
+  .footer-email-address {
+    grid-row: -4 / -1;
+    justify-self: center;
+  }
+}
+
+/**************************/
+/* BELOW 700px  */
+/**************************/
+@media (max-width: 44em) {
+  html {
+    /* font-size: 10px; */
+    /* 8.50px / 16px = 0.625 = 56.25 */
+    /* Percentage of user's browser font-size setting */
+    font-size: 50%;
+  }
+
+  .section-TCU_Judicial {
+    height: 53rem;
+  }
+
+  .section-TCU {
+    height: 49rem;
+  }
+
+  .icon-social-media {
+    width: 4.4rem;
+    height: 4.4rem;
+  }
+
+  .footer .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .logo-footer {
+    grid-column: 1/2;
+    grid-row: -4 / -1;
+  }
+
+  .footer-email-address {
+    grid-column: 2 / 3;
+    grid-row: -4 / -3;
+    justify-self: left;
+  }
+
+  .footer-phones {
+    grid-column: 2 / 3;
+    grid-row: -3 / -2;
+    margin-top: 0rem;
+    justify-self: left;
+  }
+
+  .footer-section-horizontal {
+    grid-column: 2 / 3;
+    grid-row: -2 / -1;
+    justify-self: left;
+  }
+
+  .logo-img-footer {
+    height: 20rem;
+  }
+
+  .footer-email-address,
+  .footer-phones,
+  .footer-section-horizontal {
+    margin-bottom: 1.2rem;
+  }
+
+  .footer .grid {
+    column-gap: 4.8rem;
+    row-gap: 1.6rem;
+  }
+
+  .footer .grid {
+    column-gap: 2.4rem;
+  }
+
+  .section-hero .btn {
+    padding: 1.6rem 1.2rem;
+  }
+
+  .TCU-information {
+    margin-top: 3.2rem;
+  }
+
+  .TCU_Judicial-information {
+    margin-top: 3.2rem;
+  }
+
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+
+  .TCU-information .heading-primary {
+    font-size: 3rem;
+  }
+
+  .TCU_Judicial-information .heading-primary {
+    font-size: 3rem;
+  }
+
+  .TCU-description,
+  .TCU_Judicial-description {
+    font-size: 1.8rem;
+  }
+
+  /**************************/
+  /* BELOW 550px  */
+  /**************************/
+  @media (max-width: 34em) {
+    html {
+      /* font-size: 10px; */
+      /* 7.50px / 16px = 0.4687 = 46.87% */
+      /* Percentage of user's browser font-size setting */
+      font-size: 43.75%;
+    }
+
+    .hero {
+      gap: 2.4rem;
+    }
+    .hero .heading-primary {
+      font-size: 3rem;
+    }
+
+    .TCU-information,
+    .TCU_Judicial-information {
+      width: 33%;
+    }
+
+    .TCU-information .heading-primary {
+      margin-bottom: 1.6rem;
+    }
+
+    .TCU_Judicial-information .heading-primary {
+      margin-bottom: 1.6rem;
+    }
+
+    .section-commitment .grid--2-cols {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .feature-img-box:nth-child(2) {
+      grid-row: 1;
+    }
+    .feature-img-box:nth-child(6) {
+      grid-row: 5;
+    }
+
+    .feature-heading {
+      justify-content: center;
+    }
+
+    .footer .grid {
+      display: flex;
+      flex-direction: column;
+      gap: 3.2rem;
+    }
+
+    .logo-footer .footer-email-address,
+    .footer-phones,
+    .footer-section-horizontal {
+      justify-self: center;
+      gap: 3.2rem;
+    }
+
+    .logo-footer {
+      order: 0;
+    }
+
+    .footer-email-address {
+      order: 1;
+    }
+    .footer-phones {
+      order: 2;
+    }
+    .footer-section-horizontal {
+      order: 3;
+    }
+
+    .btn {
+      font-size: 1.4rem;
+      padding: 0.4rem 1.2rem;
+    }
+
+    .section-hero {
+      height: 65rem;
+
+      padding: 15rem 0 0rem 0;
+    }
+    .section-TCU_Judicial {
+      max-height: 40rem;
+    }
+
+    .section-TCU {
+      max-height: 35rem;
+    }
+
+    .section-TCU .heading-primary {
+      font-size: 2.4rem;
+    }
+
+    .section-TCU .TCU-description {
+      font-size: 1.6rem;
+    }
+
+    .section-TCU_Judicial .heading-primary {
+      font-size: 2.4rem;
+    }
+
+    .section-TCU .TCU_Judicial-description {
+      font-size: 1.6rem;
+    }
+
+    .TCU-information {
+      top: 40%;
+      left: 80%;
+      width: 35%;
+    }
+
+    .TCU-description {
+      margin-bottom: 3.2rem;
+    }
+
+    .cta {
+      grid-template-columns: 1fr;
+    }
+  
+    .cta-text-box {
+      padding: 3.2rem;
+    }
+  
+    .cta-img-box {
+      height: 32rem;
+      grid-row: 1;
+    }
+  }
+
+  /**************************/
+  /* BELOW 370px  */
+  /**************************/
+  @media (max-width: 24em) {
+    html {
+      /* font-size: 10px; */
+      /* 7px / 16px = 0.4687 = 46.87% */
+      /* Percentage of user's browser font-size setting */
+      font-size: 33%;
+    }
+
+    .hero .heading-primary {
+      font-size: 2.4rem;
+    }
+
+    .btn--outline span {
+      display: none;
+    }
+    .btn--outline::after {
+      content: "Contactar";
+      padding: 1.6rem 3.2rem;
+    }
+
+    .hero {
+      gap: 0rem;
+    }
+    .section-TCU {
+      max-height: 32rem;
+    }
+    .TCU-information {
+      top: 45%;
+      left: 80%;
+      transform: translate(-50%, -50%);
+      width: 30%;
+    }
+
+    .TCU-description {
+      margin-bottom: 2.4rem;
+    }
+
+    .cta {
+      grid-template-columns: 1fr;
+    }
+  
+    .cta-text-box {
+      padding: 3.2rem;
+    }
+  
+    .cta-img-box {
+      height: 32rem;
+      grid-row: 1;
+    }
+  }
+}
