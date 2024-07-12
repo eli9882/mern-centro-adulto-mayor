@@ -7,6 +7,7 @@ const PostItem = ({thumbnail, category, postID, title, description, authorID, cr
     const postTitle = title.length > 30 ? title.substr(0, 30) + "..." : title;
 
     return (
+        
         <article className='post'>
             <div className="post__thumbnail">
                 <img src={`${process.env.REACT_APP_ASSET_URL}/uploads/${thumbnail}`} alt={title} />
@@ -22,6 +23,7 @@ const PostItem = ({thumbnail, category, postID, title, description, authorID, cr
                 </div>
             </div>
         </article>
+        
     )
 }
 

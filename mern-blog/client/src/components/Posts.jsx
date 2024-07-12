@@ -36,14 +36,17 @@ const Posts = () => {
 
   const settings = {
     dots: true,
-    infinite: true,
+    infinite: false,
     speed: 500,
     slidesToShow: 3,
-    slidesToScroll: 1
+    slidesToScroll: 3,
+    arrows: true
   };
 
   return (
-    <section className="posts">
+    <section className="posts" id="blogs">
+     
+      <h2 className="section-heading">Blog</h2>
       {posts.length ? (
         <Slider {...settings}>
           {posts.map(({ _id: id, thumbnail, category, title, description, creator, createdAt }) => (
@@ -63,6 +66,7 @@ const Posts = () => {
       ) : (
         <h2 className='center'>No Posts Found.</h2>
       )}
+     
     </section>
   );
 };

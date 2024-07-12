@@ -43,7 +43,7 @@ const Header = () => {
               <a className="main-nav-link scroll-link" href="#commitment">Nuestro Compromiso</a>
             </li>
             <li>
-              <a className="main-nav-link scroll-link" href="#blog">Blog</a>
+              <a className="main-nav-link scroll-link" href="#blogs">Blog</a>
             </li>
             <li>
               <a className="main-nav-link scroll-link" href="#TCU">Trabajo Comunal</a>
