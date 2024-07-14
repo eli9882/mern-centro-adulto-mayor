@@ -43,4 +43,4 @@ const CategoryPosts = () => {
 }
 
 
-export default CategoryPosts
+export default CategoryPosts;

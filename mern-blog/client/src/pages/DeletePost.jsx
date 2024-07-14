@@ -24,4 +24,4 @@ const DeletePost = () => {
   )
 }
 
-export default DeletePost
+export default DeletePost;

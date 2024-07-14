@@ -48,4 +48,4 @@ const Authors = () => {
   )
 }
 
-export default Authors
+export default Authors;
