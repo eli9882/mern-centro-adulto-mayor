@@ -45,7 +45,7 @@ const Register = () => {
                     <input type="email" placeholder='Email' name="email" value={userData.email} onChange={changeInputHandler} />
                     <input type="password" placeholder='Password' name="password" value={userData.password} onChange={changeInputHandler} />
                     <input type="password" placeholder='Confirm Password' name="password2" value={userData.password2} onChange={changeInputHandler} />
-                    <button type="submit" className='btn primary'>Register</button>
+                    <button type="submit" className='btn general btn--form'>Register</button>
                 </form>
                 <small>Already have an account? <Link to="/login">sign in</Link></small>
             </div>

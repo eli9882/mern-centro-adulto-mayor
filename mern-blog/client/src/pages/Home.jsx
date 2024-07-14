@@ -23,7 +23,7 @@ const Home = () => {
               Compañía y Alegría.
             </p>
 
-            <a href="#footer" className="btn btn--outline scroll-link"
+            <a href="#footer" className="btn_info btn--outline scroll-link"
               ><span>Información de contacto</span></a
             >
           </div>
@@ -225,7 +225,7 @@ const Home = () => {
                 </select>
               </div>
 
-              <button type="submit" className="btn btn--form">Enviar</button>
+              <button type="submit" className="btn_from btn--form">Enviar</button>
 
             </form>
            

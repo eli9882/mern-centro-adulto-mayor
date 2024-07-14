@@ -126,7 +126,7 @@ nav {
   color: #fff;
 }
 
-.btn {
+.btn_info {
   display: inline-block;
   text-decoration: none;
   font-size: 2rem;
@@ -335,6 +335,23 @@ nav {
   .cta *:focus {
     outline: none;
     box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+  }
+  .btn_from {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1.6rem 3.2rem;
+    border-radius: 9px;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.3s;
+    width: auto; 
+    box-sizing: border-box; 
+
   }
   
   .btn--form:link,
@@ -583,13 +600,9 @@ nav {
   width: 50%;
 }
 
-
-
-
-
-
-
-
+.btn.profile{
+  width: 26rem;
+}
 
 /*======================== AUTHORS ========================*/
 .authors__container {
