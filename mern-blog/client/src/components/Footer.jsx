@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from '../Recursos/Logos/Logo.png';
+import { Link } from 'react-router-dom';
 
 
 const Footer = () => {
@@ -10,10 +11,9 @@ const Footer = () => {
         <div className="grid grid--4-cols grid--center-v">
           {/*Logo*/}
           <div className="logo-footer">
-            <a href="#" className="scroll-link">
-            <img className="logo-img-footer" src={Logo} />
-              
-            </a>
+            <Link to="/" className="scroll-link">
+            <img className="logo-img-footer" src={Logo} alt="Logo" />
+            </Link>  
           </div>
             {/* Phone numbers*/}
           <div className="footer-section footer-phones">
@@ -103,6 +103,7 @@ const Footer = () => {
                 className="item-information footer-link"
                 href="https://www.google.com/maps/place/Centro+Diurno+de+Ancianos+Hatillo-San+Sebasti%C3%A1n/@9.9118754,-84.0910634,15z/data=!4m2!3m1!1s0x0:0xcf6a7192c7335ed?sa=X&ved=1t:2428&ictx=111"
                 target="_blank"
+              rel="noopener noreferrer"
                 >Av 46, San José, Kennedy</a
               >
             </div>
@@ -115,6 +116,7 @@ const Footer = () => {
                 className=""
                 href="https://www.facebook.com/centrodhss"
                 target="_blank"
+              rel="noopener noreferrer"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -130,7 +132,8 @@ const Footer = () => {
             </div>
             {/*whatsapp */}
             <div>
-              <a className="" href="https://wa.me/50661935408" target="_blank">
+              <a className="" href="https://wa.me/50661935408" target="_blank"
+              rel="noopener noreferrer">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="#25D366"
