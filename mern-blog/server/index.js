@@ -14,7 +14,7 @@ app.use(express.json({ extended: true }));
 app.use(express.urlencoded({ extended: true }));
 app.use(cors({
   credentials: true,
-  origin: ['http://localhost:3000', 'https://66989a480599fb39aeca6bbe--chimerical-biscochitos-cf4e08.netlify.app']
+  origin: ['http://localhost:3000', 'https://asilomern.netlify.app']
 }));
 app.use(upload());
 app.use('/uploads', express.static(__dirname + '/uploads'));
